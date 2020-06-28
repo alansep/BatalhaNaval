@@ -12,6 +12,8 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JMenu;
 import java.awt.Color;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
 
 public class Home extends JFrame {
 	private static final long serialVersionUID = 1L;
@@ -19,8 +21,9 @@ public class Home extends JFrame {
 
 
 	public Home() {
+		setTitle("Battleship");
 		setResizable(false);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		
 		JMenuBar menuBar = new JMenuBar();
@@ -61,5 +64,13 @@ public class Home extends JFrame {
 		});
 		btnNewButton_1.setBounds(264, 171, 89, 23);
 		contentPane.add(btnNewButton_1);
+		
+		JLabel lblNewLabel = new JLabel("GG Company");
+		lblNewLabel.setBounds(286, 236, 67, 14);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Version 0.0.1");
+		lblNewLabel_1.setBounds(367, 236, 67, 14);
+		contentPane.add(lblNewLabel_1);
 	}
 }
